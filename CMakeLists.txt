@@ -4,6 +4,9 @@ project(test_qt5_ros)
 add_compile_options(-std=c++11)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)#added
+set(CMAKE_AUTOMOC ON)
+# set(CMAKE_AUTOUIC ON)
+# set(CMAKE_AUTORCC ON)
 find_package(catkin REQUIRED COMPONENTS roscpp std_msgs)#deleted qt_build added rviz
 find_package(Qt5 REQUIRED Core Widgets)#added
 set(QT_LIBRARIES Qt5::Widgets)#added
